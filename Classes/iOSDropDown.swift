@@ -372,7 +372,7 @@ extension DropDownNew : UITextFieldDelegate {
 
 }
 ///MARK: UITableViewDataSource
-extension DropDown: UITableViewDataSource {
+extension DropDownNew : UITableViewDataSource {
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
