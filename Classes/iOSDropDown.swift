@@ -8,7 +8,7 @@
 //
 import UIKit
 
-open class DropDown : UITextField{
+open class DropDownNew : UITextField{
 
     var arrow : Arrow!
     var table : UITableView!
@@ -342,7 +342,7 @@ open class DropDown : UITextField{
 }
 
 //MARK: UITextFieldDelegate
-extension DropDown : UITextFieldDelegate {
+extension DropDownNew : UITextFieldDelegate {
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         superview?.endEditing(true)
         return false
@@ -407,7 +407,7 @@ extension DropDown: UITableViewDataSource {
     }
 }
 //MARK: UITableViewDelegate
-extension DropDown: UITableViewDelegate {
+extension DropDownNew : UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedIndex = (indexPath as NSIndexPath).row
         let selectedText = self.dataArray[self.selectedIndex!]
